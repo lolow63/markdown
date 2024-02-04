@@ -51,6 +51,93 @@ characters for blockquoting.
 Most inline <abbr title="Hypertext Markup Language">HTML</abbr> tags are supported.
 
 ---
+# Using ```bash:
+## Folder structure:
+Using cmd tree /F > tree.txt
+```bash
+C:.
+¦   .gitignore
+¦   compose.yaml
+¦   README.md
+¦   tree.txt
+¦   
++---app
+    ¦   .dockerignore
+    ¦   .DS_Store
+    ¦   Dockerfile
+    ¦   package-lock.json
+    ¦   package.json
+    ¦   server.js
+    ¦   
+    +---config
+    ¦       keys.js
+    ¦       
+    +---models
+    ¦       Todo.js
+    ¦       
+    +---routes
+    ¦       front.js
+    ¦       
+    +---views
+            todos.ejs
+```
+Using cmd tree /F /A > tree.txt (ASCII format) 
+```bash
+C:.
+|   .gitignore
+|   compose.yaml
+|   README.md
+|   tree.txt
+|   treeA.txt
+|   
+\---app
+    |   .dockerignore
+    |   .DS_Store
+    |   Dockerfile
+    |   package-lock.json
+    |   package.json
+    |   server.js
+    |   
+    +---config
+    |       keys.js
+    |       
+    +---models
+    |       Todo.js
+    |       
+    +---routes
+    |       front.js
+    |       
+    \---views
+            todos.ejs
+```
+Using cmd tree /F
+```bash
+C:.
+│   .gitignore
+│   compose.yaml
+│   README.md
+│
+└───app
+    │   .dockerignore
+    │   .DS_Store
+    │   Dockerfile
+    │   package-lock.json
+    │   package.json
+    │   server.js
+    │
+    ├───config
+    │       keys.js
+    │
+    ├───models
+    │       Todo.js
+    │
+    ├───routes
+    │       front.js
+    │
+    └───views
+            todos.ejs
+```
+---
 
 # Using Mermaid:
 ## Diagrams
